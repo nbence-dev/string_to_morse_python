@@ -75,8 +75,14 @@ class MorseCodeConverter:
         for c in morse_word:
             if c == '.':
                 self.__play_dot()
+                time.sleep(0.1)
             elif c== "-":
                 self.__play_dash()
+                time.sleep(0.1)
+            elif c==" ":
+                time.sleep(1)
+            else:
+                time.sleep(0.5)
         return morse_word
 
     def convert_to_text(self,morse_code):
