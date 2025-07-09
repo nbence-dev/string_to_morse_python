@@ -57,13 +57,13 @@ Choose from the following options:
 ```
 Do you want to encrypt, decrypt or exit: encrypt
 Enter the text you want to encrypt: hello world
-Transformed to morse code: ...././.-../.-../---/    .--/---/.-./.-.././
+Transformed to morse code: .... . .-.. .-.. --- / .-- --- .-. .-.. -..
 ```
 
 #### Decrypting Morse Code to Text
 ```
 Do you want to encrypt, decrypt or exit: decrypt
-Enter the morse code you want to decrypt: ...././.-../.-../---/    .--/---/.-./.-.././
+Enter the morse code you want to decrypt: .... . .-.. .-.. --- / .-- --- .-. .-.. -..
 Transformed to plaintext: hello world
 ```
 
@@ -104,9 +104,8 @@ The `MorseCodeConverter` class in `MorseClass.py` provides:
 - **time**: For timing operations (built-in)
 
 ### Character Encoding
-- Morse code characters are separated by `/`
-- Spaces between words are represented as four spaces (`    `)
-- Invalid characters are handled gracefully with error messages
+- Morse code characters are separated by a single space (` `).
+- Spaces between words are represented by a slash (`/`).
 
 ## Error Handling 🚨
 
